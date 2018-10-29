@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios
+    </title>
+</head>
+<body>
+    <form action="gestiondatos.jsp" method="GET" id="nosense" name="formulario">
+    <!--java server page, lugar donde se gestionará los datos del formulário-->
+    <!--información confidencial method="POST"-->
+        <label for="nom">Nombre del Usuario</label>
+        <input type="text" value="asdfgh" name="nom" id="nombre" placeholder="username" size="100" maxlength="20"/>
+        <br>
+        <input type="password" name="pass"/> 
+        <br>
+        Eres Alumno?
+        <input type="radio" name="pregunta" value="S" checked="checked"/>Sí<!--Radio group; se relacionan por la etiqueta "name"-->
+        <input type="radio" name="pregunta" value="N"/>No
+        <br>
+        Aficiones
+        <input type="checkbox" name="futbol" value="F"/>Fútbol
+        <br/>
+        <label for="provincias">Provincias</label>
+        <select name="Provincias" id="provincias">
+            <optgroup label="Unos">
+                <option value="Se"> Sevilla</option>
+            </optgroup>
+            <optgroup label="Otros">
+                <option value="Ca"> Cádiz</option>
+                <option value="Hu"> Huelva</option>
+            </optgroup>
+        </select>
+        <br/>
+        <input type="file" name="archivo"/>
+        <br/>
+        <textarea name="description" rows="10" cols="10"></textarea>
+        <br/>
+        <input type="checkbox" name="cine" value="F"/>Cine
+        <input type="checkbox" name="baloncesto" value="F"/>Baloncesto
+        <br/>
+        <input type="button" name="boton" value="Pulsar"/><!--botón de accion de formulário-->
+        <br/>
+        <input type="reset" value="Borrar"/><!--botón de reseteo de formulário-->
+        <br/>
+        <input type="submit" value="Enviar"/><!--botón de accion de formulário-->
+    </form>
+
+</body>
+</html>
